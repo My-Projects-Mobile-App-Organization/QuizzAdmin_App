@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:padding="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <EditText
+        android:id="@+id/edtTestName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Test name"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+
+        />
+
+    <EditText
+        android:id="@+id/edtTestTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:hint="Test time"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edtTestName"
+
+        />
+
+    <EditText
+        android:id="@+id/edtTestTotalQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="164dp"
+        android:layout_marginEnd="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Total Question of Test"
+        android:ems="10"
+        android:textColor="@color/black"
+        android:backgroundTint="@color/colorPrimary"
+        android:textCursorDrawable="@null"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/edtTestTime"
+
+        />
+
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/edtTestTotalQuestion"
+    >
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnAddTest"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="ADD"
+        android:textSize="18sp"
+
+        />
+    <Button
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnCancelAddTest"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+
+        android:background="@color/colorPrimary"
+        android:textColor="@color/colorAccent"
+        android:text="Cancel"
+        android:textSize="18sp"
+
+        />
+
+</LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
